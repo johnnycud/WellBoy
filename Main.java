@@ -17,8 +17,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Group root = new Group();
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        /*Group root = new Group();
         Text txt = new Text("Well Boy!");
         txt.setFont(new Font("Papyrus", 80));
         Label label = new Label("Name:");
@@ -33,11 +33,11 @@ public class Main extends Application {
         btn.setText("Say Well Boy!");
         btn.setOnAction(evt -> System.out.printf("Well Boy %s %n",
                 nameFld. getText()));
-        primaryStage.setTitle("WellBoy");
         txt.setY(10);
         VBox box = new VBox();
         box.getChildren().addAll(txt,grid);
-        root.getChildren().add(box);
+        root.getChildren().add(box);*/
+        primaryStage.setTitle("WellBoy");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
