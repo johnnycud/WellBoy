@@ -18,11 +18,12 @@
            GridPane.columnIndex="0" />
 
 
-    <TextField
+    <TextField fx:id = "firstName"
            GridPane.columnIndex="1"
            GridPane.rowIndex="1"/>
 
     <Button text ="Say Well Boy!" GridPane.rowIndex="2"
+            onAction = "#handleSayWellBoy"
             GridPane.columnIndex="1"
             GridPane.halignment="RIGHT" />
 
